@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Llanas Banda Arturo</title>
+    <!--EXAMEN PARCIAL 2, tome de base el codigo del repaso-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Lista de Tareas-Llanas Banda Arturo</h1>
+        <input type="text" id="taskInput" placeholder="Escribe una tarea...">
+        <!--Seleccion de las prioridades-->
+        <select id="prioritySelect">
+            <option value="alta">Alta</option>
+            <option value="intermedia">Intermedia</option>
+            <option value="baja">Baja</option>
+        </select>
+
+        <button type="button" onclick="addTask()">Agregar tarea</button>
+        <div class="main-container"></div>
+    </main>
+
+    <!--Agregue el modal-->
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <p>¿Estás seguro de que deseas eliminar esta tarea de alta prioridad?</p>
+            <button id="confirmDelete" class="confirm">Confirmar</button>
+            <button id="cancelDelete" class="cancel">Cancelar</button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
